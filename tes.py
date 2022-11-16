@@ -26,7 +26,7 @@ translate = {
 bahasa = st.radio('Asal Bahasa :', ('Kupang', 'Indonesia'))
 l_kata = []
 
-text = st.text_input(f'Bahasa {bahasa} : ', '').split()
+text = st.text_input(f'Bahasa {bahasa} : ', '').lower().split()
 
 if bahasa == 'Indonesia':
     for i in text:
